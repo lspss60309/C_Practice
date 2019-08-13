@@ -8,8 +8,8 @@ int BS(int, int, int, int);
 
 int array[100];
 int main(void) {
-	int n = creat_list(), SN, L = 0, R = n - 1, mid;		//SN = search_num, L= left, R = right, mid = middle
-	printf("n = %d, L = %d, R = %d.\n", n, L, R);			//test
+	int n = creat_list(), SN, L = 0, R = n - 1, mid;		
+	printf("n = %d, L = %d, R = %d.\n", n, L, R);		
 	printf("¿é¤J­n·j´M¼Æ¦r:");
 	scanf("%d", &SN);
 	printf("Search_Num = %d", SN);
@@ -44,14 +44,14 @@ int creat_list(void) {
 		exit(1);
 	}
 	for(i = 0; i < n; i++) {
-		list[i] = rand() % 1000;						//Randomly generate numbers
+		list[i] = rand() % 1000;					
 	}		
 	sort(list, n);
 	printf("Sorted array:\n");
 	for(i = 0; i < n; i++){
 		printf("%d ", list[i]);
 		array[i] = list[i];
-	}													//Print out sorted numbers
+	}												
 	printf("\n");
 	
 	
